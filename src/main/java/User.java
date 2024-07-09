@@ -24,5 +24,4 @@ public class User {
     @NotNull
     @DOB
     private LocalDate birthday;
-    //birthday should be 18 - 60 years old
 }
