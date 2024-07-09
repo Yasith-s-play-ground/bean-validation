@@ -22,6 +22,6 @@ public class User {
     @Password
     private String password;
     @NotNull
-    @DOB
+    @DOB(message = "${validatedValue}")
     private LocalDate birthday;
 }
