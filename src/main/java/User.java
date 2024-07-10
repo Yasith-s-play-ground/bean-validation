@@ -22,6 +22,7 @@ public class User {
     @Password
     private String password;
     @NotNull
-    @DOB(message = "${validatedValue}")
+    //@DOB(message = "${abc.isChild(validatedValue) ? '18 ata adui' : '60 ata wadi'}")
+    @DOB(message = "${abc.isChild(validatedValue) ? 'Below 18' : 'Above 60'}")
     private LocalDate birthday;
 }
